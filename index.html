@@ -120,9 +120,16 @@
   /* route svg */
   .route-wrap{ width:100%; margin-top:130px; margin-bottom:72px; }
   .route-wrap svg{ width:100%; height:auto; overflow:visible; }
+  .route-steps-mobile{ display:none; }
   @media (max-width:780px){
     .route-label{ display:none; }
     .route-wrap{ margin-top:64px; margin-bottom:40px; }
+    .route-steps-mobile{
+      display:flex; justify-content:space-between; gap:8px;
+      margin-top:28px;
+      font-family:var(--mono); font-size:10px; letter-spacing:0.05em;
+      text-transform:uppercase; color:var(--slate);
+    }
   }
   .route-anim{
     opacity:0; transform:translateY(10px);
@@ -350,6 +357,12 @@
         </g>
         </g>
       </svg>
+      <div class="route-steps-mobile">
+        <span>Documentation</span>
+        <span>Collection</span>
+        <span>Transit</span>
+        <span>Delivery</span>
+      </div>
     </div>
   </section>
 
