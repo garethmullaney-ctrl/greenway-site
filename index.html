@@ -120,6 +120,10 @@
   /* route svg */
   .route-wrap{ width:100%; margin-top:130px; margin-bottom:72px; }
   .route-wrap svg{ width:100%; height:auto; overflow:visible; }
+  @media (max-width:780px){
+    .route-label{ display:none; }
+    .route-wrap{ margin-top:64px; margin-bottom:40px; }
+  }
   .route-anim{
     opacity:0; transform:translateY(10px);
     animation:route-in .9s ease forwards .2s;
